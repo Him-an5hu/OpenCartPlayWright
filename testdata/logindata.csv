@@ -1,0 +1,3 @@
+testName,email,password,expected
+Login with valid credentials,abc@example.com,admin@123,Login successful
+Login with Invalid credentials,abc@example.com,wrongpassword,Invalid Username & password

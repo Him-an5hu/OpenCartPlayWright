@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","10084","User Registration Test @master @sanity @regression","firefox","2026-06-14","passed","2026-06-14","","AccountRegistration.spec.ts","",""
+"","13331","User Registration Test","firefox","2026-06-14","passed","2026-06-14","","AccountRegistration.spec.ts","",""
+"","13810","Login Test","firefox","2026-06-14","passed","2026-06-14","","Login.spec.ts","",""
+"","16492","Login Test @master @sanity @regression","firefox","2026-06-14","passed","2026-06-14","","Login.spec.ts","",""

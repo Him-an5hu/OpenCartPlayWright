@@ -1,0 +1,15 @@
+[
+    {  
+        "testCaseName":"Login with valid credentials",
+        "email":"abc@example.com", 
+        "password":"admin@123",
+        "expectedResult":"Login successful"
+
+    },
+    {
+        "testCaseName":"Login with invalid credentials",
+        "email":"bcd@example.com", 
+        "password":"wrongpassword",
+        "expectedResult":"Invalid username or password"
+    }
+]
