@@ -29,7 +29,7 @@ test.afterEach(async ({ page }) => {
 
 
 
-test("Login Test @master @sanity @regression  ", async () => {
+test("Login Test @master @sanity @regression @smoke ", async () => {
 
 
     await homepage.clickMyAccount();

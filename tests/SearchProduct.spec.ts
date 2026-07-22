@@ -23,7 +23,7 @@ let searchResultsPage: SearchResultsPage;
 // Playwright hook - runs before each test
 test.beforeEach(async ({ page }) => {
   config = new TestConfig(); // Load configuration values like URL and product name
-  await page.goto(config.appUrl); // Step 1: Navigate to the application
+  await page.goto(config.appurl); // Step 1: Navigate to the application
 
   // Initialize page objects
   homePage = new HomePage(page);
@@ -39,8 +39,8 @@ test('Product search test @master @regression', async () => {
   const productName = config.productName;
 
   // Step 2 & 3: Enter product name and click Search
-  await homePage.enterProductName(productName);
-  await homePage.clickSearch();
+  await homePage.searchProduct(productName);
+  await homePage.clickSearchButton();
 
   // Step 4: Verify that the search results page is displayed
   expect(await searchResultsPage.isSearchResultsPageExists()).toBeTruthy();

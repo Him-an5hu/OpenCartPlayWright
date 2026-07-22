@@ -2,3 +2,10 @@ This is the test file used to check pull commond
 
 
 doing the   changes to check push command
+
+
+jenkin
+password 
+d252eab8b009496686d6198e8badce8d
+
+http://localhost:8080/

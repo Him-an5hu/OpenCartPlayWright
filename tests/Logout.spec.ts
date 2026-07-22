@@ -30,7 +30,7 @@ let logoutPage: LogoutPage;
 // Setup before each test
 test.beforeEach(async ({ page }) => {
   config = new TestConfig(); // Load test config
-  await page.goto(config.appUrl); // Step 1: Navigate to app URL
+  await page.goto(config.appurl); // Step 1: Navigate to app URL
 
   // Initialize page objects
   homePage = new HomePage(page);
@@ -47,7 +47,7 @@ test.afterEach(async ({ page }) => {
 test('User logout test @master @regression', async () => {
   // Step 2: Navigate to Login page
   await homePage.clickMyAccount();
-  await homePage.clickLogin();
+  await homePage.clickLoginLink();
 
   // Step 3: Perform login using valid credentials
   await loginPage.login(config.email, config.password);
