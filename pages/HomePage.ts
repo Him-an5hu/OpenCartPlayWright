@@ -39,62 +39,30 @@ export class HomePage
     //Click My Account link
     async clickMyAccount():Promise<void>
     {
-        try{
-        await this.lnkMyAccount.click();
-        }
-        catch(error)
-        {
-            console.log(`Error occured while clicking My Account: ${error}`)
-        }
+        await this.lnkMyAccount.click();      
     }
 
     //Click on Register link
     async clickRegisterLink():Promise<void>
     {
-        try
-        {
-            await this.lnkMyRegister.click();
-        }
-        catch(error)
-        {
-            console.log(`Error while clicking on Register link: ${error}`)
-        }
+        await this.lnkMyRegister.click();
         
     }
 
     async clickLoginLink():Promise<void>
     {
-        try
-        {
-            await this.linkLogin.click();
-        }
-        catch(error)
-        {
-            console.log(`Error occured while clicking on Login button: ${error}`)
-        }
+       await this.linkLogin.click();
     }
 
     async searchProduct(pName:string):Promise<void>
     {
-        try{
-            await this.txtSearchbox.fill(pName);
-        }
-        catch(error)
-        {
-            console.log(`Error occured while entering product name ${error}`)
-        }
+       await this.txtSearchbox.fill(pName);
     }
 
     async clickSearchButton():Promise<void>
     {
-        try
-        {
-        await this.btnSearch.click();
-        }
-        catch(error)
-        {
-            console.log(`Error occured on clicking Search Button ${error}`);
-        }
+            await this.btnSearch.click();
+
     }
 
 }

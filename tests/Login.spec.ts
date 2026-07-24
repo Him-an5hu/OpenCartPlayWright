@@ -23,8 +23,8 @@ test.beforeEach(async ({ page }) => {
 
 
 test.afterEach(async ({ page }) => {
-    await page.waitForTimeout(3000);
-    await page.close();
+    // await page.waitForTimeout(3000);
+    // await page.close();
 })
 
 

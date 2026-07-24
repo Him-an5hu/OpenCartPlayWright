@@ -4,19 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-
-  "test:master": "playwright test --grep @master", 
-  "test:sanity": "playwright test --grep @sanity", 
-  "test:regression": "playwright test --grep @regression", 
-  "test:datadriven": "playwright test --grep @datadriven", 
-  "test:master:headed": "playwright test --grep @master --headed", 
-  "test:sanity:debug": "playwright test --grep @sanity --debug",
-  "test:end-to-end": "playwright test --grep @end-to-end",
-  "test:smoke": "playwright test --grep @smoke --headed"
-
-
+    "clean": "rimraf allure-results allure-report",
+    
+    "test:master": "playwright test --grep @master",
+    "test:sanity": "playwright test --grep @sanity",
+    "test:regression": "playwright test --grep @regression",
+    "test:datadriven": "playwright test --grep @datadriven",
+    "test:master:headed": "playwright test --grep @master --headed",
+    "test:sanity:debug": "playwright test --grep @sanity --debug",
+    "test:end-to-end": "playwright test --grep @end-to-end",
+    "test:smoke": "npm run clean && playwright test --grep @smoke"
   },
-  
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -24,7 +22,8 @@
   "devDependencies": {
     "@playwright/test": "^1.60.0",
     "@types/node": "^25.9.3",
-    "allure-playwright": "^3.10.0"
+    "allure-playwright": "^3.10.0",
+    "rimraf": "^6.1.3"
   },
   "dependencies": {
     "@faker-js/faker": "^10.4.0",
